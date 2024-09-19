@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <main class="flex justify-center pt-6">
+      <div class="mockup-phone border-primary">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-1">
+            <div class="hero bg-base-200 min-h-screen">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <!-- Notification Start Here -->
+                  <div class="toast toast-center toast-middle">
+                    <div id="error" class="alert alert-error text-white hidden">
+                      <span>Something Wrong! Try again</span>
+                    </div>
+                    <div
+                      id="success"
+                      class="alert alert-success text-white hidden"
+                    >
+                      <span>Successfully Done</span>
+                    </div>
+                  </div>
+                  <!-- Notification End Here -->
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Phone Number</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="phone-number"
+                        placeholder="Phone number is: 5"
+                        class="input input-bordered"
+                        required
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin</span>
+                      </label>
+                      <input
+                        type="password"
+                        id="pin-number"
+                        placeholder="Pin is: 1234"
+                        class="input input-bordered"
+                        required
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="login-btn" class="btn btn-primary">
+                        Login
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.html"></script>
+  </body>
+</html>
